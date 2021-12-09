@@ -50,7 +50,7 @@ let armCond = '\%(AL\|CC\|CS\|EQ\|GE\|GT\|HI\|HS\|LE\|LO\|LS\|LT\|MI\|NE\|PL\|VC
 exec 'syn match armv4Instr "\%(ADC\|ADD\|AND\|ASR\|BIC\|EOR\|LSL\|LSR\|MLA\|MOV\|MUL\|UDIV\|SDIV\|MVN\|NEG\|ORR\|ROR\|RRX\|RSB\|RSC\|SBC\|SMLAL\|SMULL\|SUB\|UMLAL\|UMULL\)' . armCond . 'S\?\>"'
 exec 'syn match armv4Instr "\%(ADC\|ADD\|AND\|ASR\|BIC\|EOR\|LSL\|LSR\|MLA\|MOV\|MUL\|UDIV\|SDIV\|MVN\|NEG\|ORR\|ROR\|RRX\|RSB\|RSC\|SBC\|SMLAL\|SMULL\|SUB\|UMLAL\|UMULL\)S' . armCond . '\>"'
 
-exec 'syn match armv4InstrCond  "\%(B\|BL\|BX\|CDP\|CMN\|CMP\|LDC\|MCR\|MRC\|MRS\|MSR\|NOP\|POP\|PUSH\|STC\|SWI\|SVC\|TEQ\|TST\)' . armCond . '\>"'
+exec 'syn match armv4InstrCond  "\%(B\|BL\|BR\|BX\|CDP\|CMN\|CMP\|LDC\|MCR\|MRC\|MRS\|MSR\|NOP\|POP\|PUSH\|STC\|SWI\|SVC\|TEQ\|TST\)' . armCond . '\>"'
 
 exec 'syn match armv4InstrCond  "ADR' . armCond . 'L\?\>"'
 exec 'syn match armv4InstrCond  "ADRL' . armCond . '\>"'
